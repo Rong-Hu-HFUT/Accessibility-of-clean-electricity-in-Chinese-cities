@@ -8,9 +8,9 @@ plt.rcParams['font.size'] = '15'
 plt.rcParams['font.sans-serif'] = ['SimHei'] 
 plt.rcParams['axes.unicode_minus'] = False 
 
-data = pd.read_excel(r"Ele-Pub.xlsx")
-data_Income = pd.read_excel(r"博台线-西 Ele-Pub.xlsx")
-data_Income1 = pd.read_excel(r"博台线-东 Ele-Pub.xlsx")
+data = pd.read_excel(r"Ele-Pop.xlsx")
+data_Income = pd.read_excel(r"博台线-西 Ele-Pop.xlsx")
+data_Income1 = pd.read_excel(r"博台线-东 Ele-Pop.xlsx")
 
 
 data1 = data.sort_values(by=u'cleanPower10000tonsofstand2005')
