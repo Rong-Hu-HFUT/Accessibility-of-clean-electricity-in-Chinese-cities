@@ -2,13 +2,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-# 设置字体为新罗马
+
 plt.rcParams['font.family'] = 'Times New Roman'
 plt.rcParams['font.size'] = '15'
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 显示中文
-plt.rcParams['axes.unicode_minus'] = False  # 显示负号
-
-# 读取CSV文件
+plt.rcParams['font.sans-serif'] = ['SimHei'] 
+plt.rcParams['axes.unicode_minus'] = False 
 
 data = pd.read_excel(r"Ele-Pub.xlsx")
 data_Income = pd.read_excel(r"博台线-西 Ele-Pub.xlsx")
