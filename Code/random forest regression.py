@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
-# @FileName  :random forest regression.py
-# @Time      :2024/10/7 上午10:59
-# @Author    :Hurong
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -18,7 +12,7 @@ plt.rcParams['font.family'] = 'Times New Roman'
 plt.rcParams['font.size'] = '15'
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
-# 读取数据
+ 
 data = pd.read_excel(r"random forest regression.xlsx")
 
 X = data.drop(columns=['lnCleanpowertonsofstandardcoal'])
@@ -44,7 +38,7 @@ print(f'R2 Score: {r2}')
 
 plt.figure(figsize=(8, 5), dpi=300)
 plt.scatter(y_test, y_pred, label='Predicted vs Actual', color='#E8E8E8')
-plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color='red', linestyle='--', label='x=y')  # 绘制y=x线
+plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color='red', linestyle='--', label='x=y')  
 
 
 reg = LinearRegression().fit(y_test.values.reshape(-1, 1), y_pred)
